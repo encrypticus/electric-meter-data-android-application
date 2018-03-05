@@ -35,7 +35,7 @@ import java.util.*;
 import android.widget.*;
 
 /**
-* главный класс приложения, точка входа
+* главный класс приложения, точка входа приложения
 * */
 public class MainActivity extends AppCompatActivity implements LoaderCallbacks<Cursor>, UiUpdater {
     /**
