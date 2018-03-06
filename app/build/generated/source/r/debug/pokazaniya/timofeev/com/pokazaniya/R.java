@@ -1813,10 +1813,12 @@ public final class R {
     public static final int grey_wood_pane=0x7f070051;
     public static final int ic_action_delete_forever=0x7f070052;
     public static final int ic_launcher=0x7f070053;
-    public static final int lightoff=0x7f070054;
-    public static final int lighton=0x7f070055;
-    public static final int notification_template_icon_bg=0x7f070056;
-    public static final int statistic=0x7f070057;
+    public static final int lampoff=0x7f070054;
+    public static final int lampon=0x7f070055;
+    public static final int lightoff=0x7f070056;
+    public static final int lighton=0x7f070057;
+    public static final int notification_template_icon_bg=0x7f070058;
+    public static final int statistic=0x7f070059;
   }
   public static final class id {
     public static final int action0=0x7f080000;

@@ -1,22 +1,16 @@
 package pokazaniya.timofeev.com.pokazaniya;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.database.Cursor;
-import android.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.hardware.Camera;
@@ -29,17 +23,18 @@ import android.support.v4.app.LoaderManager.LoaderCallbacks;
 
 import dialogs.AddTpDialog;
 import dialogs.*;
+
 import android.widget.AbsListView.*;
 import android.view.*;
+
 import java.util.*;
-import android.widget.*;
 
 /**
-* главный класс приложения, точка входа приложения
-* */
+ * главный класс приложения, точка входа приложения
+ */
 public class MainActivity extends AppCompatActivity implements LoaderCallbacks<Cursor>, UiUpdater {
     /**
-     *главный ListView приложения
+     * главный ListView приложения
      */
     ListView thisListView;
     /**
@@ -50,17 +45,17 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
      * класс базы данных
      */
     DbHelper db = new DbHelper(this);
-    
+
     /**
-    * этой переменной будет присвоено значение AdapterView.AdapterContextMenuInfo.position. Свойство position этого класса
-    * содержит номер пункта ListView, на котором было вызвано контекстное меню. Переменная используется для вывода
-    * сообщения в Toast при удалении пункта записи из базы данных и пункта ListView соответственно.
-    * */
+     * этой переменной будет присвоено значение AdapterView.AdapterContextMenuInfo.position. Свойство position этого класса
+     * содержит номер пункта ListView, на котором было вызвано контекстное меню. Переменная используется для вывода
+     * сообщения в Toast при удалении пункта записи из базы данных и пункта ListView соответственно.
+     */
     int getItem;
     /**
-    * этой переменной будет писвоено значение AdapterView.AdapterContextMenuInfo.id. Свойство id этого класса содержит
-    * _id записи из базы данных - primary key значение. Переменная используется при удалении записи из базы данных
-    * */
+     * этой переменной будет писвоено значение AdapterView.AdapterContextMenuInfo.id. Свойство id этого класса содержит
+     * _id записи из базы данных - primary key значение. Переменная используется при удалении записи из базы данных
+     */
     long id;
     /**
      * переменная используется при вызове контекстного меню на пункте списка и равна getItem + 1
@@ -124,77 +119,70 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         countList = getResources().getStringArray(R.array.count);
 
         thisListView = (ListView) findViewById(R.id.mainListView1);
-		thisListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
-		MultiChoiceModeListener listener = new MultiChoiceModeListener(){
-			
-			long id;
-			ArrayList<Long> ids = new ArrayList<Long>();
-			//long[] ids_converted;
-			
-			@Override
-			public boolean onCreateActionMode(ActionMode mode, Menu menu)
-			{
-				MenuInflater inflater = mode.getMenuInflater();
-				inflater.inflate(R.menu.context, menu);
-				return true;
-			}
+        thisListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
+        MultiChoiceModeListener listener = new MultiChoiceModeListener() {
 
-			@Override
-			public boolean onPrepareActionMode(ActionMode p1, Menu p2)
-			{
-				// TODO: Implement this method
-				return false;
-			}
+            long id;
+            ArrayList<Long> ids = new ArrayList<Long>();
 
-			@Override
-			public boolean onActionItemClicked(ActionMode mode, MenuItem item)
-			{
-				switch (item.getItemId()) {
-					case R.id.item_remove://если выбран пункт "Удалить" - вызвать соотвествующий диалог
-						RemoveRecordDialog removeRecordDialog = new RemoveRecordDialog();
-						long[] idsArray = new long[ids.size()];
-						for(int i=0; i<ids.size();i++){
-							idsArray[i] = ids.get(i);
-						}
-						Bundle ids_args = new Bundle();
-						ids_args.putLongArray("ids", idsArray);
-						removeRecordDialog.setArguments(ids_args);
-						removeRecordDialog.show(getSupportFragmentManager(), "removeRecordDialog");
-						return true;
-				}
-				return false;
-			}
+            @Override
+            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                MenuInflater inflater = mode.getMenuInflater();
+                inflater.inflate(R.menu.context, menu);
+                return true;
+            }
 
-			@Override
-			public void onDestroyActionMode(ActionMode p1)
-			{
-				// TODO: Implement this method
-			}
+            @Override
+            public boolean onPrepareActionMode(ActionMode p1, Menu p2) {
+                // TODO: Implement this method
+                return false;
+            }
 
-			@Override
-			public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked)
-			{
-				this.id = id;
-				if(ids.contains(id)) ids.remove(id);
-				else ids.add(id);
-			}
+            @Override
+            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.item_remove://если выбран пункт "Удалить" - вызвать соотвествующий диалог
+                        RemoveRecordDialog removeRecordDialog = new RemoveRecordDialog();
+                        long[] idsArray = new long[ids.size()];
+                        for (int i = 0; i < ids.size(); i++) {
+                            idsArray[i] = ids.get(i);
+                        }
+                        Bundle ids_args = new Bundle();
+                        ids_args.putLongArray("ids", idsArray);
+                        removeRecordDialog.setArguments(ids_args);
+                        removeRecordDialog.show(getSupportFragmentManager(), "removeRecordDialog");
+                        return true;
+                }
+                return false;
+            }
 
-			
-		};
-		thisListView.setMultiChoiceModeListener(listener);
-		AdapterView.OnItemClickListener clickListener = new AdapterView.OnItemClickListener(){
+            @Override
+            public void onDestroyActionMode(ActionMode p1) {
+                // TODO: Implement this method
+            }
 
-			@Override
-			public void onItemClick(AdapterView<?> p1, View ViewTreeObserver, int position, long id)
-			{
-				SetValueDialog setValueDialog = new SetValueDialog();
-				Bundle id_args = new Bundle();
-				id_args.putLong("id", id);
-				setValueDialog.setArguments(id_args);
-				setValueDialog.show(getSupportFragmentManager(), "setValueDialog");
-			}
-		};
-		thisListView.setOnItemClickListener(clickListener);
+            @Override
+            public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
+                this.id = id;
+                if (ids.contains(id)) ids.remove(id);
+                else ids.add(id);
+            }
+
+
+        };
+        thisListView.setMultiChoiceModeListener(listener);
+        AdapterView.OnItemClickListener clickListener = new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> p1, View ViewTreeObserver, int position, long id) {
+                SetValueDialog setValueDialog = new SetValueDialog();
+                Bundle id_args = new Bundle();
+                id_args.putLong("id", id);
+                setValueDialog.setArguments(id_args);
+                setValueDialog.show(getSupportFragmentManager(), "setValueDialog");
+            }
+        };
+        thisListView.setOnItemClickListener(clickListener);
         /**
          * регистрация контекстного меню на ListView
          */
@@ -224,6 +212,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
     /**
      * метод оболочка для вывода Toast сообщений
+     *
      * @param message String выводимое сообщение
      */
     private void showMessage(String message) {
@@ -245,7 +234,8 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
      */
     private void ledOn() {
         if (!ledIsChecked) {//если камера выключена
-            if (camera == null || parameters == null) return;//если камера не иницализирована - прервать выполнение метода
+            if (camera == null || parameters == null)
+                return;//если камера не иницализирована - прервать выполнение метода
             parameters = camera.getParameters();//иницализация параметров камеры
             parameters.setFlashMode(Parameters.FLASH_MODE_TORCH);//включить led
             camera.setParameters(parameters);//установить камере данные параметры
@@ -259,7 +249,8 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
      */
     private void ledOff() {
         if (ledIsChecked) {//если камера включена
-            if (camera == null || parameters == null) return;//если камера не инициализирована - превать метод
+            if (camera == null || parameters == null)
+                return;//если камера не инициализирована - превать метод
             parameters = camera.getParameters();//инициализация параметров камеры
             parameters.setFlashMode(Parameters.FLASH_MODE_OFF);//выключить led
             camera.setParameters(parameters);//устанавить камере данные параметры
@@ -270,6 +261,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
     /**
      * включение или отключение камеры. Метод вызывается из R.menu.settings
+     *
      * @param item
      */
     public void turnLed(MenuItem item) {
@@ -314,12 +306,13 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
     @Override
     public void onBackPressed() {
-		ExitDialog exitDialog = new ExitDialog();
-        exitDialog.show(getSupportFragmentManager(),"exitDialog"); //вывести диалоговое окно при нажатии кнопки назад
+        ExitDialog exitDialog = new ExitDialog();
+        exitDialog.show(getSupportFragmentManager(), "exitDialog"); //вывести диалоговое окно при нажатии кнопки назад
     }
 
     /**
      * создание меню настроек
+     *
      * @param menu
      * @return
      */
@@ -332,6 +325,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
     /**
      * обновление меню настроек. Вызывается перед показом меню настроек
+     *
      * @param menu
      * @return
      */
@@ -351,6 +345,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
     /**
      * создание контекстного меню
+     *
      * @param menu
      * @param v
      * @param menuInfo
@@ -363,6 +358,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
     /**
      * обработка нажатий на пункты контекстного меню
+     *
      * @param item
      * @return
      */
@@ -385,48 +381,53 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
          * временная переменная для корректного вывода позиции элемента, т.к. счет элементов начинается с нуля
          */
         temp = getItem + 1;
-		Bundle args = new Bundle();
+        Bundle args = new Bundle();
 
         switch (item.getItemId()) {
             case R.id.item_remove://если выбран пункт "Удалить" - вызвать соотвествующий диалог
-				RemoveRecordDialog removeRecordDialog = new RemoveRecordDialog();
-				args.putLong("id", id);
-				removeRecordDialog.setArguments(args);
-				removeRecordDialog.show(getSupportFragmentManager(), "removeRecordDialog");
+                RemoveRecordDialog removeRecordDialog = new RemoveRecordDialog();
+                args.putLong("id", id);
+                removeRecordDialog.setArguments(args);
+                removeRecordDialog.show(getSupportFragmentManager(), "removeRecordDialog");
                 return true;
         }
         return super.onContextItemSelected(item);
     }
-    
+
     //метод вызыватся при нажатии на пункт меню настроек "Добавить ТП"
     public void showSelectTpDialog(MenuItem item) {
         AddTpDialog tpDialog = new AddTpDialog();
-        tpDialog.show(getSupportFragmentManager(),"addTpDialog");
+        tpDialog.show(getSupportFragmentManager(), "addTpDialog");
     }
+
     //метод вызыватся при нажатии на пункт меню настроек "Добавить счетчик"
     public void showSelectCountDialog(MenuItem item) {
-		AddCountDialog addCountDialog = new AddCountDialog();
-		addCountDialog.show(getSupportFragmentManager(), "addCountDialog");
+        AddCountDialog addCountDialog = new AddCountDialog();
+        addCountDialog.show(getSupportFragmentManager(), "addCountDialog");
     }
+
     //метод вызыватся при нажатии на пункт контекстного меню "Изменить"
     public void showSetValueDialog(MenuItem item) {
-		SetValueDialog setValueDialog = new SetValueDialog();
-		setValueDialog.show(getSupportFragmentManager(), "setValueDialog");
+        SetValueDialog setValueDialog = new SetValueDialog();
+        setValueDialog.show(getSupportFragmentManager(), "setValueDialog");
     }
+
     //метод вызыватся при нажатии на пункт меню настроек "выход" или на системную кнопку "Назад"
     public void showExitDialog(MenuItem item) {
         ExitDialog exitDialog = new ExitDialog();
-        exitDialog.show(getSupportFragmentManager(),"exitDialog"); //вывести диалоговое окно при нажатии кнопки назад
+        exitDialog.show(getSupportFragmentManager(), "exitDialog"); //вывести диалоговое окно при нажатии кнопки назад
     }
+
     //метод вызывается при нажатии на пункт меню настроек "Статистика по номеру счетчика"
     public void showStatisticByCountDialog(MenuItem item) {
-	   StatisticByCountDialog statisticDialog = new StatisticByCountDialog();
-	   statisticDialog.show(getSupportFragmentManager(),"statisticDialog");
+        StatisticByCountDialog statisticDialog = new StatisticByCountDialog();
+        statisticDialog.show(getSupportFragmentManager(), "statisticDialog");
     }
     //в следующих трех методах происхдит работа с асинхронным манипулированием данных из базы
 
     /**
-     *Именно в этом методе создается инициализированный в строке 158 загрузчик
+     * Именно в этом методе создается инициализированный в строке 158 загрузчик
+     *
      * @param i
      * @param bundle
      * @return
@@ -438,6 +439,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
     /**
      * вызывается, когда созданный загрузчик завершил загрузку
+     *
      * @param loader
      * @param cursor
      */
@@ -450,10 +452,10 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     public void onLoaderReset(Loader<Cursor> loader) {
 
     }
-	
-	private void update(){
-		getSupportLoaderManager().getLoader(0).forceLoad();
-	}
+
+    private void update() {
+        getSupportLoaderManager().getLoader(0).forceLoad();
+    }
 
     /**
      * метод-оболочка над методом загрузчика forceLoad(), который при вызове заново читает данные из связанного с ним источника
@@ -462,10 +464,10 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         getSupportLoaderManager().getLoader(0).forceLoad();
         showMessage(message);
     }
-	
-	public void exit(){
-		finish();
-	}
+
+    public void exit() {
+        finish();
+    }
 
     /**
      * наследник класса CursorLoader. В нем переопределен метод loadInBackground(), в котором происходит получение

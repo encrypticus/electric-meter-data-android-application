@@ -462,10 +462,12 @@ int drawable exit 0x7f070050
 int drawable grey_wood_pane 0x7f070051
 int drawable ic_action_delete_forever 0x7f070052
 int drawable ic_launcher 0x7f070053
-int drawable lightoff 0x7f070054
-int drawable lighton 0x7f070055
-int drawable notification_template_icon_bg 0x7f070056
-int drawable statistic 0x7f070057
+int drawable lampoff 0x7f070054
+int drawable lampon 0x7f070055
+int drawable lightoff 0x7f070056
+int drawable lighton 0x7f070057
+int drawable notification_template_icon_bg 0x7f070058
+int drawable statistic 0x7f070059
 int id action0 0x7f080000
 int id action_bar 0x7f080001
 int id action_bar_activity_content 0x7f080002

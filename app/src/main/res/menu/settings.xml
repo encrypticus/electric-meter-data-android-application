@@ -20,7 +20,7 @@
 	<item
 		android:id="@+id/lightToggle"
 		android:title="LED OFF"
-		android:icon="@drawable/lightoff"
+		android:icon="@drawable/lampoff"
 		android:showAsAction="ifRoom"
 		tools:ignore="AppCompatResource"
 		android:onClick="turnLed"/>
