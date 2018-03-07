@@ -12,19 +12,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.hardware.Camera;
-import android.hardware.Camera.Parameters;
-
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v4.content.Loader;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
-
 import dialogs.*;
-
 import android.widget.AbsListView.*;
 import android.view.*;
-
 import java.util.*;
 
 /**
@@ -42,57 +36,19 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
     long[] idsArray;
     /**
-     * номера ТП и счетчиков из R.strings
-     */
-    private String tp309, tp310, tp311, tp312, tp313, tp314;
-    private String count0, count1, count2, count3, count4,
-            count5, count6, count7, count8, count9, count10, count11;
-    /**
-     * Камера
-     */
-    Camera camera;
-    /**
-     * параметры камеры
-     */
-    Parameters parameters;
-    /**
-     * флаг, указывающий - включена камера или нет
-     */
-    boolean ledIsChecked = false;
-    /**
      * массив строк номеров счетчиков из R.strings
      */
     String[] countList;
-    Cursor cursor;
     /**
      * Адаптер, к которому привязаны данные из базы
      */
     SimpleCursorAdapter simpleCursorAdapter;
+    LED led = new LED();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-        tp309 = getResources().getStringArray(R.array.tp)[0];
-        tp310 = getResources().getStringArray(R.array.tp)[1];
-        tp311 = getResources().getStringArray(R.array.tp)[2];
-        tp312 = getResources().getStringArray(R.array.tp)[3];
-        tp313 = getResources().getStringArray(R.array.tp)[4];
-        tp314 = getResources().getStringArray(R.array.tp)[5];
-
-        count0 = getResources().getStringArray(R.array.count)[0];
-        count1 = getResources().getStringArray(R.array.count)[1];
-        count2 = getResources().getStringArray(R.array.count)[2];
-        count3 = getResources().getStringArray(R.array.count)[3];
-        count4 = getResources().getStringArray(R.array.count)[4];
-        count5 = getResources().getStringArray(R.array.count)[5];
-        count6 = getResources().getStringArray(R.array.count)[6];
-        count7 = getResources().getStringArray(R.array.count)[7];
-        count8 = getResources().getStringArray(R.array.count)[8];
-        count9 = getResources().getStringArray(R.array.count)[9];
-        count10 = getResources().getStringArray(R.array.count)[10];
-        count11 = getResources().getStringArray(R.array.count)[11];
 
         countList = getResources().getStringArray(R.array.count);
 
@@ -146,9 +102,8 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
                     idsArray[i] = ids.get(i);
                 }
             }
-
-
         };
+
         thisListView.setMultiChoiceModeListener(listener);
         AdapterView.OnItemClickListener clickListener = new AdapterView.OnItemClickListener() {
 
@@ -193,55 +148,18 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     private void showMessage(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
-
-    /**
-     * инициализация камеры
-     */
-    private void getCamera() {
-        if (camera == null) {
-            camera = Camera.open();
-            parameters = camera.getParameters();
-        }
-    }
-
-    /**
-     * включение led
-     */
-    private void ledOn() {
-        if (camera == null || parameters == null)
-            return;//если камера не иницализирована - прервать выполнение метода
-        parameters = camera.getParameters();//иницализация параметров камеры
-        parameters.setFlashMode(Parameters.FLASH_MODE_TORCH);//включить led
-        camera.setParameters(parameters);//установить камере данные параметры
-        camera.startPreview();//стартануть камеру
-        ledIsChecked = true;// установить флаг в значение true
-    }
-
-    /**
-     * выключение led
-     */
-    private void ledOff() {
-        if (camera == null || parameters == null)
-            return;//если камера не инициализирована - превать метод
-        parameters = camera.getParameters();//инициализация параметров камеры
-        parameters.setFlashMode(Parameters.FLASH_MODE_OFF);//выключить led
-        camera.setParameters(parameters);//устанавить камере данные параметры
-        camera.stopPreview();//остановить камеру
-        ledIsChecked = false;//установить флаг в значение false
-    }
-
     /**
      * включение или отключение камеры. Метод вызывается из R.menu.settings
      *
      * @param item
      */
     public void turnLed(MenuItem item) {
-        if (!ledIsChecked) {//если фонарик выключен
-            ledOn();//включить фонарик
+        if (!led.ledIsChecked) {//если фонарик выключен
+            led.ledOn();//включить фонарик
             item.setTitle("LED ON");//изменить надпись пункта меню настроек
             item.setIcon(R.drawable.lampon);//сменить иконку пункта меню настроек
         } else {//иначе
-            ledOff();//выключить фонарик
+            led.ledOff();//выключить фонарик
             item.setTitle("LED OFF");//изменить надпись пункта меню настроек
             item.setIcon(R.drawable.lampoff);//сменить иконку пункта меню настроек
         }
@@ -255,37 +173,34 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     @Override
     protected void onResume() {
         super.onResume();
-        if (ledIsChecked) ledOn();// включить фонарик, если флаг установлен в true
+        if (led.ledIsChecked) led.ledOn();// включить фонарик, если флаг установлен в true
         invalidateOptionsMenu();//обновить пункт меню списка настроек
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        getCamera();//инициализировать камеру
+        led.getCamera();//инициализировать камеру
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (camera != null) {
-            camera.release();//освободить камеру
-            camera = null;
-        }
+        led.cameraRelease();
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putLongArray("longArray", idsArray);
-        outState.putBoolean("ledIsChecked", ledIsChecked);
+        outState.putBoolean("ledIsChecked", led.ledIsChecked);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         idsArray = savedInstanceState.getLongArray("longArray");
-        ledIsChecked = savedInstanceState.getBoolean("ledIsChecked");
+        led.ledIsChecked = savedInstanceState.getBoolean("ledIsChecked");
     }
 
     @Override
@@ -316,8 +231,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem item = menu.getItem(2);//пункт меню управления фонариком
-        String title = item.getTitle().toString();// название пункта
-        if (!ledIsChecked) {//если false
+        if (!led.ledIsChecked) {//если false
             item.setTitle("LED OFF");//сменить название пункта
             item.setIcon(R.drawable.lampoff);//изменить иконку пункта
         } else {//иначе
@@ -350,12 +264,6 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     public void showSelectCountDialog(MenuItem item) {
         AddCountDialog addCountDialog = new AddCountDialog();
         addCountDialog.show(getSupportFragmentManager(), "addCountDialog");
-    }
-
-    //метод вызыватся при нажатии на пункт контекстного меню "Изменить"
-    public void showSetValueDialog(MenuItem item) {
-        SetValueDialog setValueDialog = new SetValueDialog();
-        setValueDialog.show(getSupportFragmentManager(), "setValueDialog");
     }
 
     //метод вызыватся при нажатии на пункт меню настроек "выход" или на системную кнопку "Назад"
@@ -397,10 +305,6 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
 
-    }
-
-    private void update() {
-        getSupportLoaderManager().getLoader(0).forceLoad();
     }
 
     /**
