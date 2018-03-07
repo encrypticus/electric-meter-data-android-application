@@ -1,6 +1,5 @@
 package pokazaniya.timofeev.com.pokazaniya;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +20,6 @@ import android.support.v4.content.Loader;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 
-import dialogs.AddTpDialog;
 import dialogs.*;
 
 import android.widget.AbsListView.*;
@@ -38,31 +36,11 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
      */
     ListView thisListView;
     /**
-     * объект для построения диалоговых окон
-     */
-    AlertDialog.Builder builder;
-    /**
      * класс базы данных
      */
     DbHelper db = new DbHelper(this);
 
-    /**
-     * этой переменной будет присвоено значение AdapterView.AdapterContextMenuInfo.position. Свойство position этого класса
-     * содержит номер пункта ListView, на котором было вызвано контекстное меню. Переменная используется для вывода
-     * сообщения в Toast при удалении пункта записи из базы данных и пункта ListView соответственно.
-     */
-    int getItem;
-    /**
-     * этой переменной будет писвоено значение AdapterView.AdapterContextMenuInfo.id. Свойство id этого класса содержит
-     * _id записи из базы данных - primary key значение. Переменная используется при удалении записи из базы данных
-     */
-    long id;
-    /**
-     * переменная используется при вызове контекстного меню на пункте списка и равна getItem + 1
-     * нужна для корректного отображения номера удаленной записи в сообщении Toast, т.к. getItem начинается с 0,
-     * а нужно, чтоб счет начинался с 1
-     */
-    int temp;
+    long[] idsArray;
     /**
      * номера ТП и счетчиков из R.strings
      */
@@ -120,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 
         thisListView = (ListView) findViewById(R.id.mainListView1);
         thisListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
+
         MultiChoiceModeListener listener = new MultiChoiceModeListener() {
 
             long id;
@@ -143,10 +122,6 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
                 switch (item.getItemId()) {
                     case R.id.item_remove://если выбран пункт "Удалить" - вызвать соотвествующий диалог
                         RemoveRecordDialog removeRecordDialog = new RemoveRecordDialog();
-                        long[] idsArray = new long[ids.size()];
-                        for (int i = 0; i < ids.size(); i++) {
-                            idsArray[i] = ids.get(i);
-                        }
                         Bundle ids_args = new Bundle();
                         ids_args.putLongArray("ids", idsArray);
                         removeRecordDialog.setArguments(ids_args);
@@ -166,6 +141,10 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
                 this.id = id;
                 if (ids.contains(id)) ids.remove(id);
                 else ids.add(id);
+                idsArray = new long[ids.size()];
+                for (int i = 0; i < ids.size(); i++) {
+                    idsArray[i] = ids.get(i);
+                }
             }
 
 
@@ -183,10 +162,6 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
             }
         };
         thisListView.setOnItemClickListener(clickListener);
-        /**
-         * регистрация контекстного меню на ListView
-         */
-        //registerForContextMenu(thisListView);
         /**
          * массив строк, содержащих имена столбцов в базе данных. Используется в SimpleCursorAdapter
          */
@@ -233,30 +208,26 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
      * включение led
      */
     private void ledOn() {
-        if (!ledIsChecked) {//если камера выключена
-            if (camera == null || parameters == null)
-                return;//если камера не иницализирована - прервать выполнение метода
-            parameters = camera.getParameters();//иницализация параметров камеры
-            parameters.setFlashMode(Parameters.FLASH_MODE_TORCH);//включить led
-            camera.setParameters(parameters);//установить камере данные параметры
-            camera.startPreview();//стартануть камеру
-            ledIsChecked = true;// установить флаг в значение true
-        }
+        if (camera == null || parameters == null)
+            return;//если камера не иницализирована - прервать выполнение метода
+        parameters = camera.getParameters();//иницализация параметров камеры
+        parameters.setFlashMode(Parameters.FLASH_MODE_TORCH);//включить led
+        camera.setParameters(parameters);//установить камере данные параметры
+        camera.startPreview();//стартануть камеру
+        ledIsChecked = true;// установить флаг в значение true
     }
 
     /**
      * выключение led
      */
     private void ledOff() {
-        if (ledIsChecked) {//если камера включена
-            if (camera == null || parameters == null)
-                return;//если камера не инициализирована - превать метод
-            parameters = camera.getParameters();//инициализация параметров камеры
-            parameters.setFlashMode(Parameters.FLASH_MODE_OFF);//выключить led
-            camera.setParameters(parameters);//устанавить камере данные параметры
-            camera.stopPreview();//остановить камеру
-            ledIsChecked = false;//установить флаг в значение false
-        }
+        if (camera == null || parameters == null)
+            return;//если камера не инициализирована - превать метод
+        parameters = camera.getParameters();//инициализация параметров камеры
+        parameters.setFlashMode(Parameters.FLASH_MODE_OFF);//выключить led
+        camera.setParameters(parameters);//устанавить камере данные параметры
+        camera.stopPreview();//остановить камеру
+        ledIsChecked = false;//установить флаг в значение false
     }
 
     /**
@@ -268,18 +239,17 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         if (!ledIsChecked) {//если фонарик выключен
             ledOn();//включить фонарик
             item.setTitle("LED ON");//изменить надпись пункта меню настроек
-            item.setIcon(R.drawable.lighton);//сменить иконку пункта меню настроек
+            item.setIcon(R.drawable.lampon);//сменить иконку пункта меню настроек
         } else {//иначе
             ledOff();//выключить фонарик
             item.setTitle("LED OFF");//изменить надпись пункта меню настроек
-            item.setIcon(R.drawable.lightoff);//сменить иконку пункта меню настроек
+            item.setIcon(R.drawable.lampoff);//сменить иконку пункта меню настроек
         }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        ledOff();//выключить фонарик, если он включен
     }
 
     @Override
@@ -302,6 +272,20 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
             camera.release();//освободить камеру
             camera = null;
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putLongArray("longArray", idsArray);
+        outState.putBoolean("ledIsChecked", ledIsChecked);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        idsArray = savedInstanceState.getLongArray("longArray");
+        ledIsChecked = savedInstanceState.getBoolean("ledIsChecked");
     }
 
     @Override
@@ -335,10 +319,10 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         String title = item.getTitle().toString();// название пункта
         if (!ledIsChecked) {//если false
             item.setTitle("LED OFF");//сменить название пункта
-            item.setIcon(R.drawable.lightoff);//изменить иконку пункта
+            item.setIcon(R.drawable.lampoff);//изменить иконку пункта
         } else {//иначе
             item.setTitle("LED ON");//сменить название пункта на другое
-            item.setIcon(R.drawable.lighton);//сменить иконку на другую
+            item.setIcon(R.drawable.lampon);//сменить иконку на другую
         }
         return super.onPrepareOptionsMenu(menu);
     }
@@ -354,44 +338,6 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         getMenuInflater().inflate(R.menu.context, menu);
-    }
-
-    /**
-     * обработка нажатий на пункты контекстного меню
-     *
-     * @param item
-     * @return
-     */
-    @Override
-    public boolean onContextItemSelected(MenuItem item) {
-        /**
-         * в объекте данного класса хранится вся информация об элементе AdapterView, к которому
-         * привязано данное контекстное меню
-         */
-        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
-        /**
-         * позиция (int) элемента в AdapterView. Счет начинаетс с нуля
-         */
-        getItem = info.position;
-        /**
-         * id элемента, который равен id записи в базе данных
-         */
-        id = info.id;
-        /**
-         * временная переменная для корректного вывода позиции элемента, т.к. счет элементов начинается с нуля
-         */
-        temp = getItem + 1;
-        Bundle args = new Bundle();
-
-        switch (item.getItemId()) {
-            case R.id.item_remove://если выбран пункт "Удалить" - вызвать соотвествующий диалог
-                RemoveRecordDialog removeRecordDialog = new RemoveRecordDialog();
-                args.putLong("id", id);
-                removeRecordDialog.setArguments(args);
-                removeRecordDialog.show(getSupportFragmentManager(), "removeRecordDialog");
-                return true;
-        }
-        return super.onContextItemSelected(item);
     }
 
     //метод вызыватся при нажатии на пункт меню настроек "Добавить ТП"
