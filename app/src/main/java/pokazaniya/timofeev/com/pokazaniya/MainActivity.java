@@ -1,6 +1,7 @@
 package pokazaniya.timofeev.com.pokazaniya;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ import android.support.v4.content.Loader;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import dialogs.*;
+import pokazaniya.timofeev.com.pokazaniya.services.LEDService;
+
 import android.widget.AbsListView.*;
 import android.view.*;
 import java.util.*;
@@ -44,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
      */
     SimpleCursorAdapter simpleCursorAdapter;
     LED led = new LED();
+    boolean ledIsChecked = false;
+    Intent ledServiceIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         setContentView(R.layout.main);
 
         countList = getResources().getStringArray(R.array.count);
+        ledServiceIntent = new Intent(this, LEDService.class);
 
         thisListView = (ListView) findViewById(R.id.mainListView1);
         thisListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
@@ -154,14 +160,18 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
      * @param item
      */
     public void turnLed(MenuItem item) {
-        if (!led.ledIsChecked) {//если фонарик выключен
-            led.ledOn();//включить фонарик
+        if (!ledIsChecked) {//если фонарик выключен
+            //led.ledOn();//включить фонарик
             item.setTitle("LED ON");//изменить надпись пункта меню настроек
             item.setIcon(R.drawable.lampon);//сменить иконку пункта меню настроек
+            startService(ledServiceIntent);
+            ledIsChecked = true;
         } else {//иначе
-            led.ledOff();//выключить фонарик
+            //led.ledOff();//выключить фонарик
             item.setTitle("LED OFF");//изменить надпись пункта меню настроек
             item.setIcon(R.drawable.lampoff);//сменить иконку пункта меню настроек
+            stopService(ledServiceIntent);
+            ledIsChecked = false;
         }
     }
 
@@ -173,34 +183,40 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     @Override
     protected void onResume() {
         super.onResume();
-        if (led.ledIsChecked) led.ledOn();// включить фонарик, если флаг установлен в true
+        //if (led.ledIsChecked) led.ledOn();// включить фонарик, если флаг установлен в true
         invalidateOptionsMenu();//обновить пункт меню списка настроек
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        led.getCamera();//инициализировать камеру
+        //led.getCamera();//инициализировать камеру
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        led.cameraRelease();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (ledServiceIntent != null) stopService(ledServiceIntent);
+        finish();
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putLongArray("longArray", idsArray);
-        outState.putBoolean("ledIsChecked", led.ledIsChecked);
+        outState.putBoolean("ledIsChecked", ledIsChecked);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         idsArray = savedInstanceState.getLongArray("longArray");
-        led.ledIsChecked = savedInstanceState.getBoolean("ledIsChecked");
+        ledIsChecked = savedInstanceState.getBoolean("ledIsChecked");
     }
 
     @Override
@@ -231,7 +247,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem item = menu.getItem(2);//пункт меню управления фонариком
-        if (!led.ledIsChecked) {//если false
+        if (!ledIsChecked) {//если false
             item.setTitle("LED OFF");//сменить название пункта
             item.setIcon(R.drawable.lampoff);//изменить иконку пункта
         } else {//иначе
@@ -316,6 +332,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     }
 
     public void exit() {
+        if (ledServiceIntent != null) stopService(ledServiceIntent);
         finish();
     }
 
