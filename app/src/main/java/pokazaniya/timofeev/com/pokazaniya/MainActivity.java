@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     SimpleCursorAdapter simpleCursorAdapter;
     LED led = new LED();
     boolean ledIsChecked = false;
-    Intent ledServiceIntent;
+    //Intent ledServiceIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         setContentView(R.layout.main);
 
         countList = getResources().getStringArray(R.array.count);
-        ledServiceIntent = new Intent(this, LEDService.class);
+        //ledServiceIntent = new Intent(this, LEDService.class);
 
         thisListView = (ListView) findViewById(R.id.mainListView1);
         thisListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
@@ -160,18 +160,18 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
      * @param item
      */
     public void turnLed(MenuItem item) {
-        if (!ledIsChecked) {//если фонарик выключен
-            //led.ledOn();//включить фонарик
+        if (!led.ledIsChecked) {//если фонарик выключен
+            led.ledOn();//включить фонарик
             item.setTitle("LED ON");//изменить надпись пункта меню настроек
             item.setIcon(R.drawable.lampon);//сменить иконку пункта меню настроек
-            startService(ledServiceIntent);
-            ledIsChecked = true;
+            //startService(ledServiceIntent);
+            //ledIsChecked = true;
         } else {//иначе
-            //led.ledOff();//выключить фонарик
+            led.ledOff();//выключить фонарик
             item.setTitle("LED OFF");//изменить надпись пункта меню настроек
             item.setIcon(R.drawable.lampoff);//сменить иконку пункта меню настроек
-            stopService(ledServiceIntent);
-            ledIsChecked = false;
+            //stopService(ledServiceIntent);
+            //ledIsChecked = false;
         }
     }
 
@@ -183,40 +183,42 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     @Override
     protected void onResume() {
         super.onResume();
-        //if (led.ledIsChecked) led.ledOn();// включить фонарик, если флаг установлен в true
+        if (led.ledIsChecked) led.ledOn();// включить фонарик, если флаг установлен в true
         invalidateOptionsMenu();//обновить пункт меню списка настроек
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        //led.getCamera();//инициализировать камеру
+        led.getCamera();//инициализировать камеру
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+        //led.cameraRelease();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (ledServiceIntent != null) stopService(ledServiceIntent);
-        finish();
+        led.cameraRelease();
+//        if (ledServiceIntent != null) stopService(ledServiceIntent);
+//        finish();
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putLongArray("longArray", idsArray);
-        outState.putBoolean("ledIsChecked", ledIsChecked);
+        outState.putBoolean("ledIsChecked", led.ledIsChecked);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         idsArray = savedInstanceState.getLongArray("longArray");
-        ledIsChecked = savedInstanceState.getBoolean("ledIsChecked");
+        led.ledIsChecked = savedInstanceState.getBoolean("ledIsChecked");
     }
 
     @Override
@@ -247,7 +249,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem item = menu.getItem(2);//пункт меню управления фонариком
-        if (!ledIsChecked) {//если false
+        if (!led.ledIsChecked) {//если false
             item.setTitle("LED OFF");//сменить название пункта
             item.setIcon(R.drawable.lampoff);//изменить иконку пункта
         } else {//иначе
@@ -332,7 +334,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     }
 
     public void exit() {
-        if (ledServiceIntent != null) stopService(ledServiceIntent);
+        //if (ledServiceIntent != null) stopService(ledServiceIntent);
         finish();
     }
 
