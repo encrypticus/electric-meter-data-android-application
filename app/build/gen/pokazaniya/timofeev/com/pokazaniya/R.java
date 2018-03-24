@@ -1629,11 +1629,12 @@ containing a value of this type.
         public static final int grey_wood_pane=0x7f020051;
         public static final int ic_action_delete_forever=0x7f020052;
         public static final int ic_launcher=0x7f020053;
-        public static final int lightoff=0x7f020054;
-        public static final int lighton=0x7f020055;
-        public static final int notification_template_icon_bg=0x7f020058;
-        public static final int statistic=0x7f020056;
-        public static final int trash=0x7f020057;
+        public static final int lampoff=0x7f020054;
+        public static final int lampon=0x7f020055;
+        public static final int lightoff=0x7f020056;
+        public static final int lighton=0x7f020057;
+        public static final int notification_template_icon_bg=0x7f020059;
+        public static final int statistic=0x7f020058;
     }
     public static final class id {
         public static final int action0=0x7f0c0051;

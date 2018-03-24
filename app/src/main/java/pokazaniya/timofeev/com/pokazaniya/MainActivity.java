@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        led.cameraRelease();
+        led.cameraRelease();//
 //        if (ledServiceIntent != null) stopService(ledServiceIntent);
 //        finish();
     }
