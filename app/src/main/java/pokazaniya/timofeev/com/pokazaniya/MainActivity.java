@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     /**
      * класс базы данных
      */
-    DbHelper db = new DbHelper(this);
+    DbHelper db = new DbHelper(this);//
 
     long[] idsArray;
     /**
