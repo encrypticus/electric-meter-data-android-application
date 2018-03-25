@@ -68,6 +68,7 @@
     <ListView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:id="@+id/mainListView1"/>
+        android:id="@+id/mainListView1"
+		android:layoutAnimation="@anim/layout_bottom_to_top_slide" />
 
 </LinearLayout>

@@ -39,6 +39,24 @@
             android:enabled="true"
             android:exported="false">
         </service>
+		
+		<receiver
+			android:name="Mwidget"
+			android:icon="@drawable/widget"
+			android:label="Виджет Показания">
+
+			<intent-filter>
+				<action
+					android:name="android.appwidget.action.APPWIDGET_UPDATE">
+				</action>
+			</intent-filter>
+
+			<meta-data
+				android:name="android.appwidget.provider"
+				android:resource="@xml/widget_metadata">
+			</meta-data>
+
+		</receiver>
 
     </application>
 

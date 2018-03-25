@@ -336,6 +336,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
     public void exit() {
         //if (ledServiceIntent != null) stopService(ledServiceIntent);
         finish();
+		overridePendingTransition(R.anim.activity_rotate_right, R.anim.activity_rotate_left);
     }
 
     /**
