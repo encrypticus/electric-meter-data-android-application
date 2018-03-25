@@ -32,7 +32,7 @@ public class SetValueDialog extends DialogWindow
 	 * _id записи из базы данных - primary key значение. Переменная используется при удалении или изменении записи базы данных
 	 * */
 	long id;
-	
+
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState)
 	{
@@ -52,7 +52,7 @@ public class SetValueDialog extends DialogWindow
 		//установка кнопок и слушателей окна
 		builder.setPositiveButton(R.string.insert, setValueListener);//установить кнопки для диалогового
 		builder.setNegativeButton(R.string.cancel, setValueListener);//окна и слушатели на них
-		return builder.create();
+		return super.createDialog();
 	}
 	/**
      * объект данного интерфейса устанавливается в качестве слушателя события выбора пункта контекстного
@@ -66,7 +66,7 @@ public class SetValueDialog extends DialogWindow
                 case Dialog.BUTTON_POSITIVE://если нажата кнопка "Изменить"
                     String value = et.getText().toString();//получить данные, введенные в текстовое поле
                     db.changeRecord(id, value);//изменить данные в базе данных
-                     uiUpdater.update("Значение изменено");//обновить
+					uiUpdater.update("Значение изменено");//обновить
                     break;
                 case Dialog.BUTTON_NEGATIVE://если нажата кнопка "Оменить" - ничего не делать
                     break;

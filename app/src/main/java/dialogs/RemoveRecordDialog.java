@@ -27,8 +27,8 @@ public class RemoveRecordDialog extends DialogWindow
 	 * Свойство id этого класса содержит
 	 * _id записи из базы данных - primary key значение. Переменная используется при удалении или изменении записи базы данных
 	 * */
-	 long[] ids;
-	 
+	long[] ids;
+
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState)
 	{
@@ -44,7 +44,7 @@ public class RemoveRecordDialog extends DialogWindow
 		//установка кнопок и слушателей
 		builder.setPositiveButton(R.string.remove, removeRecordListener);
 		builder.setNegativeButton(R.string.no, removeRecordListener);
-		return builder.create();
+		return super.createDialog();
 	}
 	/**
      * объект данного интерфейса устанавливается в качестве слушателя события выбора контекстного меню "Удалить"

@@ -12,5 +12,10 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:actionBarStyle" tools:targetApi="11">@style/ActionBar</item>
     </style>
+	
+	<style name="ScaleRotateAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_rotate_right</item>
+        <item name="android:windowExitAnimation">@anim/scale_rotate_left</item>
+    </style>
 
 </resources>

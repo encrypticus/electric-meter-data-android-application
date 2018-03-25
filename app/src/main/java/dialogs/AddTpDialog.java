@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 import pokazaniya.timofeev.com.pokazaniya.R;
 import android.view.View.*;
 /**
@@ -18,7 +18,7 @@ public class AddTpDialog extends DialogWindow {
      */
     String tp309, tp310, tp311, tp312, tp313, tp314;
     String count0, count1, count2, count3, count4,
-            count5, count6, count7, count8, count9, count10, count11;
+	count5, count6, count7, count8, count9, count10, count11;
 	//инициализация		
 	void init(){
 		super.init();
@@ -71,7 +71,7 @@ public class AddTpDialog extends DialogWindow {
          */
         builder.setSingleChoiceItems(tpList, -1, addTpListener);
 		builder.setNeutralButton(R.string.ok, okListener);
-        return builder.create();
+		return super.createDialog();
     }
     /**
      * объект интерфейса будет установлен в качестве слушателя нажатия пункта "добавить ТП" из меню настроек
@@ -116,7 +116,7 @@ public class AddTpDialog extends DialogWindow {
         }
 
     };
-	
+
 	DialogInterface.OnClickListener okListener =new DialogInterface.OnClickListener(){
 
 		@Override

@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 
 import pokazaniya.timofeev.com.pokazaniya.DbHelper;
 import pokazaniya.timofeev.com.pokazaniya.R;
@@ -29,10 +29,18 @@ public class DialogWindow extends DialogFragment
 	 * объект непосредственно диалогового окна
 	 */
 	AlertDialog.Builder builder;
+	AlertDialog dialog;
 	//инициализация		
 	void init(){
 		db = new DbHelper(getActivity());
 		builder = new AlertDialog.Builder(getActivity());
+		//builder = new AlertDialog.Builder(getActivity(), R.style.AppCompatAlertDialogStyle);
+	}
+
+	AlertDialog createDialog(){
+		dialog = builder.create();
+		dialog.getWindow().getAttributes().windowAnimations = R.style.ScaleRotateAnimation;
+		return dialog;
 	}
 	/**
      * основной метод, в котором создается диалоговое окно. Для создания непосредственно диалогового окна внутри метода
@@ -47,9 +55,10 @@ public class DialogWindow extends DialogFragment
 	{
 		// инициализация
 		init();
-		return builder.create();
+		//return builder.create();
+		return null;
 	}
-	
+
 	/**
      * Метод onAttach() вызывается в начале жизненного цикла фрагмента, и именно здесь мы можем получить контекст фрагмента,
      * в качестве которого выступает класс MainActivity. Так как MainActivity реализует интерфейс UiUpdater,

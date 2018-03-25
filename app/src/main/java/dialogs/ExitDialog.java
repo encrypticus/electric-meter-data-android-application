@@ -15,9 +15,9 @@ public class ExitDialog extends DialogWindow
 		builder.setIcon(R.drawable.exit);
 		builder.setPositiveButton(R.string.yes, exitListener);
 		builder.setNegativeButton(R.string.no, exitListener);
-		return builder.create();
+		return super.createDialog();
 	}
-	
+
 	/**
      * объект этого интерфейса устанавливается в качестве слушателя пункта меню настроек "Выход" или
      * нажатия системной кнопки "Назад"

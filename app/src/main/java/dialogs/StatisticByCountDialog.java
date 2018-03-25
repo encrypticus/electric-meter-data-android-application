@@ -17,7 +17,7 @@ public class StatisticByCountDialog extends DialogWindow
 		builder.setTitle(R.string.statisticByCount);
 		builder.setItems(countList, statisticByCountListener);
 		builder.setNeutralButton(R.string.cancel, okListener);
-		return builder.create();
+		return super.createDialog();
 	}
 	/**
      * метод инкапсулирует отправку сообщения с помощью параметра intent
@@ -30,6 +30,7 @@ public class StatisticByCountDialog extends DialogWindow
         intent.putExtra("countNumber", countNumber);
         //перейти на активность intent
         startActivity(intent);
+		getActivity().overridePendingTransition(R.anim.activity_rotate_left, R.anim.activity_rotate_right);
     }
 	/**
      * объект данного интерфейса устанавливается в качестве слушателя выбора пункта меню настроек
@@ -84,7 +85,7 @@ public class StatisticByCountDialog extends DialogWindow
             }
         }
     };
-	
+
 	DialogInterface.OnClickListener okListener =new DialogInterface.OnClickListener(){
 
 		@Override

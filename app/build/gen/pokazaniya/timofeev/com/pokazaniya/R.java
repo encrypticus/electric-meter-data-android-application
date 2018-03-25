@@ -2027,6 +2027,7 @@ containing a value of this type.
         public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0a0033;
         public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0a0034;
         public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0a0035;
+        public static final int ScaleRotateAnimation=0x7f0a0140;
         public static final int TextAppearance_AppCompat=0x7f0a00b6;
         public static final int TextAppearance_AppCompat_Body1=0x7f0a00b7;
         public static final int TextAppearance_AppCompat_Body2=0x7f0a00b8;

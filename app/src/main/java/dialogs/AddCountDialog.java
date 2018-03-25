@@ -27,7 +27,7 @@ public class AddCountDialog extends AddTpDialog
          */
 		builder.setSingleChoiceItems(countList, -1, addCountListener);
 		builder.setNeutralButton(R.string.ok, okListener);
-		return builder.create();
+		return super.createDialog();
 	}
 	/**
      * объект интерфейса будет установлен в качестве слушателя действия "добавить счетчик" из меню настрек
