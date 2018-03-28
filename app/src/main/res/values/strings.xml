@@ -13,6 +13,7 @@
     <string name="alert">Внимание</string>
     <string name="remove">Удалить</string>
 	<string name="ok">OK</string>
+	<string name="settings">Настройки</string>
 
     <string-array name="tp">
         <item>309</item>

@@ -37,6 +37,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="pokazaniya.timofeev.com.pokazaniya.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName="pokazaniya.timofeev.com.pokazaniya.MainActivity" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <service
             android:name="pokazaniya.timofeev.com.pokazaniya.services.LEDService"

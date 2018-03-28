@@ -1665,8 +1665,10 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0d003d;
         public static final int action_mode_close_button=0x7f0d0023;
         public static final int activity_chooser_view_content=0x7f0d0024;
-        public static final int addCount=0x7f0d0068;
-        public static final int addTp=0x7f0d0067;
+        public static final int addCount=0x7f0d006a;
+        public static final int addCountBtn=0x7f0d005f;
+        public static final int addTp=0x7f0d0069;
+        public static final int addTpBtn=0x7f0d005e;
         public static final int alertTitle=0x7f0d0030;
         public static final int always=0x7f0d001c;
         public static final int beginning=0x7f0d0019;
@@ -1684,7 +1686,7 @@ containing a value of this type.
         public static final int edit_query=0x7f0d0043;
         public static final int end=0x7f0d001a;
         public static final int end_padder=0x7f0d005d;
-        public static final int exit=0x7f0d006b;
+        public static final int exit=0x7f0d006e;
         public static final int expand_activities_button=0x7f0d0025;
         public static final int expanded_menu=0x7f0d0038;
         public static final int home=0x7f0d0004;
@@ -1693,8 +1695,8 @@ containing a value of this type.
         public static final int ifRoom=0x7f0d001e;
         public static final int image=0x7f0d0026;
         public static final int info=0x7f0d005c;
-        public static final int item_remove=0x7f0d0066;
-        public static final int lightToggle=0x7f0d0069;
+        public static final int item_remove=0x7f0d0068;
+        public static final int lightToggle=0x7f0d006b;
         public static final int line1=0x7f0d0056;
         public static final int line3=0x7f0d005a;
         public static final int listMode=0x7f0d0009;
@@ -1725,8 +1727,9 @@ containing a value of this type.
         public static final int search_src_text=0x7f0d004a;
         public static final int search_voice_btn=0x7f0d004e;
         public static final int select_dialog_listview=0x7f0d004f;
-        public static final int setValueLayout=0x7f0d005e;
-        public static final int setvalue=0x7f0d005f;
+        public static final int setValueLayout=0x7f0d0060;
+        public static final int settings=0x7f0d006d;
+        public static final int setvalue=0x7f0d0061;
         public static final int shortcut=0x7f0d003a;
         public static final int showCustom=0x7f0d000f;
         public static final int showHome=0x7f0d0010;
@@ -1736,14 +1739,14 @@ containing a value of this type.
         public static final int src_atop=0x7f0d0016;
         public static final int src_in=0x7f0d0017;
         public static final int src_over=0x7f0d0018;
-        public static final int statisticByCount=0x7f0d006a;
+        public static final int statisticByCount=0x7f0d006c;
         public static final int status_bar_latest_event_content=0x7f0d0053;
         public static final int submit_area=0x7f0d004c;
         public static final int tabMode=0x7f0d000b;
-        public static final int tableTextView1=0x7f0d0060;
-        public static final int tableTextView2=0x7f0d0061;
-        public static final int tableTextView3=0x7f0d0062;
-        public static final int tableTextView4=0x7f0d0063;
+        public static final int tableTextView1=0x7f0d0062;
+        public static final int tableTextView2=0x7f0d0063;
+        public static final int tableTextView3=0x7f0d0064;
+        public static final int tableTextView4=0x7f0d0065;
         public static final int text=0x7f0d005b;
         public static final int text2=0x7f0d0059;
         public static final int textSpacerNoButtons=0x7f0d0034;
@@ -1753,8 +1756,8 @@ containing a value of this type.
         public static final int topPanel=0x7f0d002e;
         public static final int up=0x7f0d0008;
         public static final int useLogo=0x7f0d0012;
-        public static final int widgetImage=0x7f0d0064;
-        public static final int widgetTextView1=0x7f0d0065;
+        public static final int widgetImage=0x7f0d0066;
+        public static final int widgetTextView1=0x7f0d0067;
         public static final int withText=0x7f0d0020;
         public static final int wrap_content=0x7f0d0013;
     }
@@ -1804,10 +1807,11 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f040023;
         public static final int select_dialog_multichoice_material=0x7f040024;
         public static final int select_dialog_singlechoice_material=0x7f040025;
-        public static final int setvalue=0x7f040026;
-        public static final int support_simple_spinner_dropdown_item=0x7f040027;
-        public static final int table=0x7f040028;
-        public static final int widget=0x7f040029;
+        public static final int settings_layout=0x7f040026;
+        public static final int setvalue=0x7f040027;
+        public static final int support_simple_spinner_dropdown_item=0x7f040028;
+        public static final int table=0x7f040029;
+        public static final int widget=0x7f04002a;
     }
     public static final class menu {
         public static final int context=0x7f0f0000;
@@ -1848,6 +1852,7 @@ containing a value of this type.
         public static final int removeRecord=0x7f07001e;
         public static final int selectCount=0x7f070016;
         public static final int selectTp=0x7f070015;
+        public static final int settings=0x7f070022;
         public static final int statisticByCount=0x7f070017;
         public static final int status_bar_notification_info_overflow=0x7f070013;
         public static final int yes=0x7f07001a;

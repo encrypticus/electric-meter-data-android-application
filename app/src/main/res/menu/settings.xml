@@ -32,6 +32,12 @@
 	/>
 
 	<item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+		android:onClick="showSettingsActivity"
+	/>
+
+	<item
 		android:id="@+id/exit"
 		android:title="@string/exit"
 		android:onClick="showExitDialog"

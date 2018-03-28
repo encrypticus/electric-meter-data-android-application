@@ -295,6 +295,11 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
         StatisticByCountDialog statisticDialog = new StatisticByCountDialog();
         statisticDialog.show(getSupportFragmentManager(), "statisticDialog");
     }
+	
+	public void showSettingsActivity(MenuItem item){
+		Intent intent = new Intent(this, SettingsActivity.class);
+		startActivity(intent);
+	}
     //в следующих трех методах происхдит работа с асинхронным манипулированием данных из базы
 
     /**
