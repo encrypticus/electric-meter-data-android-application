@@ -300,6 +300,11 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
 		Intent intent = new Intent(this, SettingsActivity.class);
 		startActivity(intent);
 	}
+	
+	public void showAddTpSettingsDialog(View view){
+		AddTpSettingsDialog addTpSettingsDialog = new AddTpSettingsDialog();
+		addTpSettingsDialog.show(getSupportFragmentManager(), "tpSettingsDialog");
+	}
     //в следующих трех методах происхдит работа с асинхронным манипулированием данных из базы
 
     /**

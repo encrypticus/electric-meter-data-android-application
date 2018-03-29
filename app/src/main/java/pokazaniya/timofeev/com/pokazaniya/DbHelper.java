@@ -25,6 +25,8 @@ public class DbHelper extends SQLiteOpenHelper implements DbHelperHandler {
      * строка запроса для БД, в которой саздается таблица, в которую будут попадать записи, удаленные из основной таблицы
      */
     private  String createTrashTable;
+	private String createTpListTable;
+	private String createCountListTable;
     /**
      * контекст
      */
@@ -49,10 +51,14 @@ public class DbHelper extends SQLiteOpenHelper implements DbHelperHandler {
         createMainTable = "CREATE TABLE IF NOT EXISTS "+TABLE_NAME+"("+ID_KEY+" INTEGER PRIMARY KEY AUTOINCREMENT, tp_number TEXT, count_number TEXT, value TEXT, date TEXT)";
         //createTrashTable = "CREATE TABLE IF NOT EXISTS "+TABLE_TRASH+"("
         //Toast.makeText(context, "База данных создана", Toast.LENGTH_SHORT).show();
+		createTpListTable = "CREATE TABLE IF NOT EXISTS "+TABLE_TP_LIST+"("+ID_KEY+" INTEGER PRIMARY KEY AUTOINCREMENT, tp_number TEXT)";
+		createCountListTable = "CREATE TABLE IF NOT EXISTS "+TABLE_COUNT_LIST+"("+ID_KEY+" INTEGER PRIMARY KEY AUTOINCREMENT, "+COUNT_NUMBER+" TEXT, "+TP_NUMBER+" TEXT)";
         /**
          * выполнение запроса к базе
          */
         db.execSQL(createMainTable);
+		db.execSQL(createTpListTable);
+		db.execSQL(createCountListTable);
     }
 
     /**
@@ -65,6 +71,8 @@ public class DbHelper extends SQLiteOpenHelper implements DbHelperHandler {
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_TP_LIST);
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_COUNT_LIST);
         onCreate(db);
     }
 

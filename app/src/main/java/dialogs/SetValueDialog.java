@@ -58,7 +58,7 @@ public class SetValueDialog extends DialogWindow
      * объект данного интерфейса устанавливается в качестве слушателя события выбора пункта контекстного
      * меню "Изменить"
      */
-    DialogInterface.OnClickListener setValueListener = new DialogInterface.OnClickListener() {
+   DialogInterface.OnClickListener setValueListener = new DialogInterface.OnClickListener() {
 
         @Override
         public void onClick(DialogInterface dialog, int which) {

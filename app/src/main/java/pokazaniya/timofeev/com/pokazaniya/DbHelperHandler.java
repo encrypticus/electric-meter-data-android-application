@@ -8,10 +8,12 @@ import android.database.Cursor;
  */
 public interface DbHelperHandler {
 
-    public static final int DB_VERSION = 2;//версия базы данных
+    public static final int DB_VERSION = 1;//версия базы данных
     public static final String DB_NAME = "pokazaniya";//имя базы данных
     public static final String TABLE_NAME = "pok";//имя основной таблицы
     public static final String TABLE_TRASH = "trash";//имя таблицы, в которой будут храниться удаленные записи
+	public static final String TABLE_TP_LIST = "tp_list";//имя таблицы списка ТП, добавляемых пользователем
+	public static final String TABLE_COUNT_LIST = "count_list";
     public static final String ID_KEY = "_id";//id записи
     public static final String TP_NUMBER = "tp_number";//номер ТП
     public static final String COUNT_NUMBER = "count_number";//номер счетчика
