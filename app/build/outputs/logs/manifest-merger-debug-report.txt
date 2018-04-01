@@ -1,27 +1,27 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
 MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\Public\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.0.aar\22cc2dfde9f04581589673779e022462\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:animated-vector-drawable:23.2.0] C:\Users\Public\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.0.aar\b50ca37c3dba6440a6773223c45cb78c\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\Public\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.0.aar\0c8f9530ff0c6a5fb40749205a9b33b8\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Public\.gradle\caches\transforms-1\files-1.1\support-v4-23.2.0.aar\ce9f64281646127088f428179f9fa6c0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
 	package
 		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml
 		INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-45:12
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:1-74:12
 		INJECTED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -70,7 +70,7 @@ ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:13
 	android:name
 		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:13:22-77
 application
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:15:5-43:19
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:15:5-72:19
 MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\Public\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.0.aar\22cc2dfde9f04581589673779e022462\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\Public\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.0.aar\22cc2dfde9f04581589673779e022462\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.0] C:\Users\Public\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.0.aar\b50ca37c3dba6440a6773223c45cb78c\AndroidManifest.xml:7:5-20
@@ -90,38 +90,66 @@ MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Public\.gradle\cach
 	android:theme
 		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:20:9-40
 activity#pokazaniya.timofeev.com.pokazaniya.MainActivity
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:22:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:26:27-74
 activity#pokazaniya.timofeev.com.pokazaniya.StatisticByCountActivity
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:28:9-35:20
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:30:9-37:20
 	android:parentActivityName
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:31:13-55
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:33:13-55
 	android:label
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:30:13-53
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:32:13-53
 	android:name
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:29:13-53
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:31:13-53
 intent-filter#android.intent.category.DEFAULT
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:32:13-34:29
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:34:13-36:29
 category#android.intent.category.DEFAULT
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:33:17-76
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:33:27-73
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:35:27-73
+activity#pokazaniya.timofeev.com.pokazaniya.SettingsActivity
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:39:3-46:20
+	android:parentActivityName
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:42:13-55
+	android:label
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:41:13-45
+	android:name
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:40:13-45
 service#pokazaniya.timofeev.com.pokazaniya.services.LEDService
-ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:37:9-41:19
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:48:9-52:19
 	android:enabled
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:39:13-35
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:50:13-35
 	android:exported
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:38:13-48
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:49:13-48
+receiver#pokazaniya.timofeev.com.pokazaniya.Mwidget
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:54:3-70:14
+	android:label
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:57:4-36
+	android:icon
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:56:4-35
+	android:name
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:55:4-26
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:59:4-63:20
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:60:5-62:14
+	android:name
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:61:6-62
+meta-data#android.appwidget.provider
+ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:65:4-68:16
+	android:resource
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:67:5-44
+	android:name
+		ADDED from D:\android\projects\PokazaniyaApp\app\src\main\AndroidManifest.xml:66:5-46

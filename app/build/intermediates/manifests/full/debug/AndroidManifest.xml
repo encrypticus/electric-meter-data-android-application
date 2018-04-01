@@ -39,12 +39,35 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="pokazaniya.timofeev.com.pokazaniya.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName="pokazaniya.timofeev.com.pokazaniya.MainActivity" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <service
             android:name="pokazaniya.timofeev.com.pokazaniya.services.LEDService"
             android:enabled="true"
             android:exported="false" >
         </service>
+
+        <receiver
+            android:name="pokazaniya.timofeev.com.pokazaniya.Mwidget"
+            android:icon="@drawable/widget"
+            android:label="Виджет Показания" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" >
+                </action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_metadata" >
+            </meta-data>
+        </receiver>
     </application>
 
 </manifest>
