@@ -4,7 +4,7 @@ import android.os.*;
 import android.view.View.*;
 import android.content.*;
 
-public class AddTpSettingsDialog extends SetValueDialog
+public class AddTpSettingsDialog extends SetValueDialogWindow
 {
 
 	@Override
