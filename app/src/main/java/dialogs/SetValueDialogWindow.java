@@ -4,8 +4,9 @@ import android.os.*;
 import android.view.*;
 import android.widget.*;
 import pokazaniya.timofeev.com.pokazaniya.*;
+import android.content.*;
 
-public class SetValueDialogWindow extends DialogWindow
+public class SetValueDialogWindow extends SimpleDialogWindow
 {
 	/**
      * создает layout из ресурса R.layout.setvalue.
@@ -39,5 +40,5 @@ public class SetValueDialogWindow extends DialogWindow
 		builder.setView(view);
 		return super.createDialog();
 	}
-	
+
 }

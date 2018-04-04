@@ -19,7 +19,7 @@ public class SettingsActivity extends AppCompatActivity
 
 	public void showAddTpSettingsDialog(View view){
 		AddTpSettingsDialog addTpSettingsDialog = new AddTpSettingsDialog();
-		//addTpSettingsDialog.show(getSupportFragmentManager(), "tpSettingsDialog");
+		addTpSettingsDialog.show(getSupportFragmentManager(), "tpSettingsDialog");
 	}
 	
 }

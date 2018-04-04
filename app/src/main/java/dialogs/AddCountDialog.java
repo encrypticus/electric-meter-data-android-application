@@ -1,9 +1,8 @@
 package dialogs;
 import android.app.*;
 import android.os.*;
-import pokazaniya.timofeev.com.pokazaniya.R;
 import android.content.*;
-import pokazaniya.timofeev.com.pokazaniya.*;
+import pokazaniya.timofeev.com.pokazaniya.R;
 
 public class AddCountDialog extends AddTpDialog
 {
