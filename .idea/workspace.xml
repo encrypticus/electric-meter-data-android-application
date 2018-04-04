@@ -14,28 +14,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c011adf5-88b3-4f5c-a03a-c1a738b7407e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/dialogs/AddTpToDatabaseDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/util/Message.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/dialogs/AddTpSettingsDialog.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_main.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_main.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu_settings.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu_settings.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/pokazaniya/timofeev/com/pokazaniya/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/pokazaniya/timofeev/com/pokazaniya/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/dialogs/SimpleDialogWindow.java" afterPath="$PROJECT_DIR$/app/src/main/java/dialogs/SimpleDialogWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelperHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelperHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,47 +53,32 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="3360">
               <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2037#2043#0" expanded="true" />
-                <element signature="e#3928#4415#0" expanded="true" />
-                <element signature="e#4414#4415#0" expanded="true" />
-                <element signature="e#6579#6580#0" expanded="true" />
-                <element signature="e#6610#6611#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddTpSettingsDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/AddTpSettingsDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetValueDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/SetValueDialog.java">
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/util/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-819">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="357">
+              <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleDialogWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/SimpleDialogWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-84">
+              <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -112,70 +87,65 @@
       <file leaf-file-name="DialogWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/DialogWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-756">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="441">
+              <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/settings.xml">
+      <file leaf-file-name="SetValueDialogWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/SetValueDialogWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+            <state relative-caret-position="252">
+              <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings_layout.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_layout.xml">
+      <file leaf-file-name="SetValueDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/SetValueDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LEDService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/services/LEDService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+            <state relative-caret-position="273">
+              <caret line="60" column="54" lean-forward="false" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
               <folding>
-                <element signature="e#870#871#0" expanded="false" />
-                <element signature="e#909#910#0" expanded="false" />
+                <element signature="e#2140#2786#0" expanded="true" />
+                <element signature="e#2785#2786#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <file leaf-file-name="AddTpToDatabaseDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/AddTpToDatabaseDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="256">
+              <caret line="39" column="85" lean-forward="false" selection-start-line="39" selection-start-column="85" selection-end-line="39" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#887#1263#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LED.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/LED.java">
+      <file leaf-file-name="DbHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+            <state relative-caret-position="347">
+              <caret line="173" column="25" lean-forward="false" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbHelperHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelperHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -186,8 +156,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -1924,6 +1894,13 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/settings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dialogs/DialogWindow.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dialogs/SimpleDialogWindow.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dialogs/AddTpSettingsDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelperHandler.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/dialogs/AddTpToDatabaseDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/util/Message.java" />
       </list>
     </option>
   </component>
@@ -1948,7 +1925,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2024,30 +2004,9 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dialogs" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PokazaniyaApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2055,6 +2014,364 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="device.picker.selection" value="192.168.14.101:5555" />
     <property name="android.profiler.active" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/app.apk</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classes.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTMetadata.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$anim.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$array.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$attr.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$bool.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$color.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$dimen.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$drawable.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$id.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$integer.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$layout.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$menu.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$mipmap.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$string.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$style.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$styleable.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$xml.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddCountDialog$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddCountDialog$100000000$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddCountDialog$100000000.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddCountDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$100000000$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$100000000.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$100000001$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/DialogWindow$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/DialogWindow.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/ExitDialog$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/ExitDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/RemoveRecordDialog$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/RemoveRecordDialog$100000000$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/RemoveRecordDialog$100000000.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/RemoveRecordDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialog$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialog$100000000$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialog$100000000.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialogWindow$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialogWindow.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/StatisticByCountDialog$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/StatisticByCountDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/BuildConfig.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$anim.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$array.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$attr.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$bool.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$color.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$dimen.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$drawable.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$id.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$integer.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$layout.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$menu.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$mipmap.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$string.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$style.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$styleable.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$xml.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/SettingsActivity$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/services/LEDService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/AddCountDialog$100000000.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/AddCountDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/AddCountDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/AddCountDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/AddTpDialog$100000000.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/AddTpDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/AddTpDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/AddTpDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/DialogWindow.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/DialogWindow.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/ExitDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/ExitDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/RemoveRecordDialog$100000000.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/RemoveRecordDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/RemoveRecordDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/RemoveRecordDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/SetValueDialog$100000000.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/SetValueDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/SetValueDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/SetValueDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/SetValueDialogWindow.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/SetValueDialogWindow.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/StatisticByCountDialog.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/StatisticByCountDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/jardex/support-annotations-23.2.0.jar.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/resources.ap_</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/dialogs/AddCountDialog.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/dialogs/AddTpDialog.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/dialogs/DialogWindow.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/dialogs/SetValueDialogWindow.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRT.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTLogCatReader.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTLongMap.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTLongSet.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTMetadata.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTReceiver.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTReflector.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTSender.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTThread.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/adrt/ADRTThreadLocal.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$anim$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$anim.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$array$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$array.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$attr$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$attr.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$bool$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$bool.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$color$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$color.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$dimen$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$dimen.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$drawable$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$drawable.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$id$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$id.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$integer$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$integer.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$layout$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$layout.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$menu$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$menu.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$mipmap$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$mipmap.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$string$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$string.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$style$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$style.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$styleable$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$styleable.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$xml$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R$xml.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/android/support/v7/appcompat/R.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddCountDialog$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddCountDialog$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddCountDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddCountDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$100000001$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog$100000001.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpSettingsDialog$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpSettingsDialog$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpSettingsDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/AddTpSettingsDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/DialogWindow$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/DialogWindow.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/ExitDialog$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/ExitDialog$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/ExitDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/ExitDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/RemoveRecordDialog$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/RemoveRecordDialog$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/RemoveRecordDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/RemoveRecordDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialog$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialog$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialogWindow$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SetValueDialogWindow.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SimpleDialogWindow$0$debug.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SimpleDialogWindow$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SimpleDialogWindow.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/SimpleDialogWindow.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/StatisticByCountDialog$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/StatisticByCountDialog$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/StatisticByCountDialog$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/StatisticByCountDialog$100000001$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/StatisticByCountDialog$100000001.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/dialogs/StatisticByCountDialog.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/BuildConfig$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/BuildConfig.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/DbHelper$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/DbHelper.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/DbHelperHandler.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/LED$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/LED.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/MainActivity$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/MainActivity$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/MainActivity$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/MainActivity$100000001$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/MainActivity$100000001.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/MainActivity$DbCursorLoader$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/MainActivity$DbCursorLoader.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/MainActivity.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/Mwidget$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/Mwidget.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$anim$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$anim.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$array$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$array.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$attr$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$attr.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$bool$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$bool.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$color$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$color.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$dimen$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$dimen.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$drawable$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$drawable.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$id$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$id.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$integer$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$integer.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$layout$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$layout.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$menu$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$menu.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$mipmap$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$mipmap.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$string$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$string.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$style$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$style.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$styleable$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$styleable.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$xml$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R$xml.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/R.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/SettingsActivity$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/StatisticByCountActivity$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/StatisticByCountActivity$DbCursorLoader$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/StatisticByCountActivity$DbCursorLoader.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/StatisticByCountActivity.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/UiUpdater.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/services/LEDService$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/services/LEDService$100000000$0$debug.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/services/LEDService$100000000.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesdebug/pokazaniya/timofeev/com/pokazaniya/services/LEDService.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/SimpleDialogWindow.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/build/bin/classesrelease/dialogs/SimpleDialogWindow.dex</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/app/src/main/java/dialogs/SimpleDialogWindow.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2139,7 +2456,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522599758299" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522861972341" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2187,7 +2504,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522599758353" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522861972341" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2370,7 +2687,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522599759651" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522861972345" />
       </method>
     </configuration>
     <list size="1">
@@ -2448,7 +2765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520702075747</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="bugs fixed">
+      <created>1522599994839</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1522599994859</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2480,7 +2804,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.681431" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5911414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2508,25 +2832,150 @@
     <MESSAGE value="Почищен код в MainActivity, работа с фонариком вынесена в отдельный класс" />
     <MESSAGE value="Код фонарика вынесен в Service" />
     <MESSAGE value="Код фонарика вернут из сервиса, т.к. реализация фонарика в сервисе работает некорректно. В MainActivity в методе onStop() закомментирован вызов led.cameraRelease() для предотвращения выключения фонарика при сворачивании приложения или блокировке экрана" />
-    <option name="LAST_COMMIT_MESSAGE" value="Код фонарика вернут из сервиса, т.к. реализация фонарика в сервисе работает некорректно. В MainActivity в методе onStop() закомментирован вызов led.cameraRelease() для предотвращения выключения фонарика при сворачивании приложения или блокировке экрана" />
+    <MESSAGE value="bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugs fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/LED.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/DialogWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1302">
+          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5838">
+          <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/AddTpToDatabaseDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/SetValueDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/DialogWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/services/LEDService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/LED.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2730">
           <caret line="152" column="7" lean-forward="false" selection-start-line="152" selection-start-column="7" selection-end-line="152" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2037#2043#0" expanded="true" />
-            <element signature="e#3928#4415#0" expanded="true" />
-            <element signature="e#4414#4415#0" expanded="true" />
-            <element signature="e#6579#6580#0" expanded="true" />
-            <element signature="e#6610#6611#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2534,7 +2983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2565,10 +3013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="777">
           <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-          <folding>
-            <element signature="e#870#871#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2592,7 +3036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2600,14 +3043,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2730">
           <caret line="152" column="7" lean-forward="false" selection-start-line="152" selection-start-column="7" selection-end-line="152" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2037#2043#0" expanded="true" />
-            <element signature="e#3928#4415#0" expanded="true" />
-            <element signature="e#4414#4415#0" expanded="true" />
-            <element signature="e#6579#6580#0" expanded="true" />
-            <element signature="e#6610#6611#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2615,7 +3051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2646,10 +3081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="777">
           <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-          <folding>
-            <element signature="e#870#871#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2673,7 +3104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2681,14 +3111,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2625">
           <caret line="152" column="77" lean-forward="false" selection-start-line="152" selection-start-column="77" selection-end-line="152" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2037#2043#0" expanded="true" />
-            <element signature="e#3928#4415#0" expanded="true" />
-            <element signature="e#4414#4415#0" expanded="true" />
-            <element signature="e#6579#6580#0" expanded="true" />
-            <element signature="e#6610#6611#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2718,7 +3141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2726,18 +3148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="777">
           <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-          <folding>
-            <element signature="e#870#871#0" expanded="false" />
-            <element signature="e#909#910#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/LED.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2745,24 +3155,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+        <state relative-caret-position="378">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="164">
           <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
           <folding />
         </state>
@@ -2773,7 +3179,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/settings_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -2782,51 +3188,104 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2037#2043#0" expanded="true" />
-            <element signature="e#3928#4415#0" expanded="true" />
-            <element signature="e#4414#4415#0" expanded="true" />
-            <element signature="e#6579#6580#0" expanded="true" />
-            <element signature="e#6610#6611#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="710">
+          <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/LED.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/DialogWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="441">
+          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelperHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3360">
+          <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/SetValueDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-819">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="273">
+          <caret line="60" column="54" lean-forward="false" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+          <folding>
+            <element signature="e#2140#2786#0" expanded="true" />
+            <element signature="e#2785#2786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/SetValueDialogWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/AddTpSettingsDialog.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/SimpleDialogWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="-84">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/SettingsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/pokazaniya/timofeev/com/pokazaniya/DbHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="347">
+          <caret line="173" column="25" lean-forward="false" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/dialogs/AddTpToDatabaseDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="39" column="85" lean-forward="false" selection-start-line="39" selection-start-column="85" selection-end-line="39" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#887#1263#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/util/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
           </folding>
         </state>
       </provider>

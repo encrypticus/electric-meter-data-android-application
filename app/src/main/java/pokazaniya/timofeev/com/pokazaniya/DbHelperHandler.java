@@ -24,5 +24,6 @@ public interface DbHelperHandler {
     public void changeRecord(long id, String value);//вставка значения value или изменение записи c id, равным id
     public Cursor getStatisticByCount(int countNumber);//получение статистики по счетчику с номером countNumber
 	public Cursor getAllRecords();//получение всех записей из базы
+    public void addTp(String tpNumber);
 
 }

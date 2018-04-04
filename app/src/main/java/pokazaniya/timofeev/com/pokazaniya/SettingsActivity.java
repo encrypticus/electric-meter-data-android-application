@@ -3,7 +3,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.*;
 import android.view.View;
 
-import dialogs.AddTpSettingsDialog;
+import dialogs.AddTpToDatabaseDialog;
 
 public class SettingsActivity extends AppCompatActivity
 {
@@ -18,7 +18,7 @@ public class SettingsActivity extends AppCompatActivity
 
 
 	public void showAddTpSettingsDialog(View view){
-		AddTpSettingsDialog addTpSettingsDialog = new AddTpSettingsDialog();
+		AddTpToDatabaseDialog addTpSettingsDialog = new AddTpToDatabaseDialog();
 		addTpSettingsDialog.show(getSupportFragmentManager(), "tpSettingsDialog");
 	}
 	

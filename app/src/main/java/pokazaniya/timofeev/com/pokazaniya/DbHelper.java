@@ -164,4 +164,14 @@ public class DbHelper extends SQLiteOpenHelper implements DbHelperHandler {
         dbWriter.update(TABLE_NAME, contentValues, ID_KEY+"="+id, null);
     }
 
+    public void addTp(String tpNumber){
+        //объект базы данных для записи в нее
+        SQLiteDatabase dbWriter = getWritableDatabase();
+        //объект для упаковки данных
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(TP_NUMBER, tpNumber);
+        dbWriter.insert(TABLE_TP_LIST, null, contentValues);
+        dbWriter.close();
+    }
+
 }
